@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DatamodelOpenWerk</title>
+<link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> DatamodelOpenWerk </h1>
+			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="EA3.htm">DatamodelOpenSociaal</a> / <a href="EA1.htm">DatamodelOpenWerk</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../images/175.png" alt="Diagram"/> <a href="EA1.htm">DatamodelOpenWerk</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA12.htm">Attributie</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA13.htm">BasaleADL</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA14.htm">Basisvaardigheden</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA15.htm">Begeleidingsbehoefte</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA17.htm">Belastbaarheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA19.htm">BelastbaarheidState</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA20.htm">Beroepsbeeld</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA22.htm">CognitieveBelastbaarheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA23.htm">DigitaleVaardigheden</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA25.htm">Duurzaamheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA26.htm">EnergieEnUren</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA27.htm">ErvarenGezondheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA28.htm">Financien</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA29.htm">FysiekeBelastbaarheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA30.htm">GeestelijkeGezondheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA31.htm">HaalbareReisafstand</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA32.htm">HuiselijkeRelaties</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA33.htm">Huisvesting</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA34.htm">IndicatieEnInstrument</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA35.htm">InstrumenteleADL</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA36.htm">IntentieEnMotivatie</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA37.htm">Justitie</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA38.htm">LichamelijkeGezondheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA40.htm">MaatschappelijkeParticipatie</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA41.htm">MeedoenNu</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA42.htm">Middelengebruik</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA43.htm">Mobiliteit</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA45.htm">Opleiding</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA46.htm">ParticipatieActiviteit</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA49.htm">Partij</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA50.htm">Persoon</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA51.htm">Productiviteit</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA52.htm">PsychischeBelastbaarheid</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA53.htm">SociaalNetwerk</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA54.htm">SocialeVaardigheden</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA55.htm">SoortDienstverband</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA58.htm">Taal</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA60.htm">Tijdsbesteding</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA61.htm">Vervoer</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA63.htm">VisieOpWerk</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA64.htm">Werkervaring</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA66.htm">WerkNu</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA68.htm">Werkzoekgedrag</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA70.htm">Zelfvertrouwen</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA71.htm">ZorgtakenKinderopvang</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA72.htm">ZRM</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA74.htm">ZRMBeoordeling</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA75.htm">ZRMBeoordelingsresultaat</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA76.htm">ZRMCriterium</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA77.htm">ZRMLevensgebied</a></li>
+<li><img src="../images/5.png" alt="Class"/> <a href="EA78.htm">ZRMNiveau</a></li>
+<li><img src="../images/25.png" alt="Object"/> <a href="EA59.htm">TestCut1</a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA18.htm">BelastbaarheidsNiveau</a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA47.htm">ParticipatieActiviteitStatus</a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA48.htm">ParticipatieActiviteitType</a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA57.htm">Status<br /></a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA62.htm">Vervoersmiddel</a></li>
+<li><img src="../images/247.png" alt="Enumeration"/> <a href="EA69.htm">WerkzoekNiveau</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA2.png" usemap="#EA2" width="3077" height="2521" border="0" />
+
+<MAP NAME="EA2">
+<area shape="rect" coords="90,936,225,1041" href="EA49.htm" target="_self">
+<area shape="rect" coords="1562,266,1847,372" href="EA9.htm" target="_self">
+<area shape="rect" coords="2760,942,3062,1089" href="EA47.htm" target="_self">
+<area shape="rect" coords="2760,759,3062,906" href="EA48.htm" target="_self">
+<area shape="rect" coords="2178,171,2411,278" href="EA8.htm" target="_self">
+<area shape="rect" coords="1938,114,2156,281" href="EA69.htm" target="_self">
+<area shape="rect" coords="2366,827,2667,1071" href="EA46.htm" target="_self">
+<area shape="rect" coords="575,2420,807,2507" href="EA7.htm" target="_self">
+<area shape="rect" coords="797,1364,1082,1470" href="EA6.htm" target="_self">
+<area shape="rect" coords="828,2262,1061,2409" href="EA62.htm" target="_self">
+<area shape="rect" coords="95,2253,366,2400" href="EA57.htm" target="_self">
+<area shape="rect" coords="444,1334,746,1500" href="EA19.htm" target="_self">
+<area shape="rect" coords="77,1355,378,1460" href="EA17.htm" target="_self">
+<area shape="rect" coords="336,602,602,668" href="EA37.htm" target="_self">
+<area shape="rect" coords="35,602,300,668" href="EA40.htm" target="_self">
+<area shape="rect" coords="336,492,602,558" href="EA53.htm" target="_self">
+<area shape="rect" coords="35,492,300,558" href="EA35.htm" target="_self">
+<area shape="rect" coords="336,384,602,450" href="EA13.htm" target="_self">
+<area shape="rect" coords="35,384,300,450" href="EA42.htm" target="_self">
+<area shape="rect" coords="336,285,602,351" href="EA38.htm" target="_self">
+<area shape="rect" coords="35,285,300,351" href="EA30.htm" target="_self">
+<area shape="rect" coords="336,186,602,252" href="EA32.htm" target="_self">
+<area shape="rect" coords="35,186,300,252" href="EA33.htm" target="_self">
+<area shape="rect" coords="336,96,602,162" href="EA60.htm" target="_self">
+<area shape="rect" coords="35,96,300,162" href="EA28.htm" target="_self">
+<area shape="rect" coords="2366,2057,2667,2162" href="EA25.htm" target="_self">
+<area shape="rect" coords="2027,2058,2328,2163" href="EA55.htm" target="_self">
+<area shape="rect" coords="1697,2057,1998,2162" href="EA66.htm" target="_self">
+<area shape="rect" coords="2367,1781,2669,1886" href="EA15.htm" target="_self">
+<area shape="rect" coords="2027,1781,2328,1886" href="EA34.htm" target="_self">
+<area shape="rect" coords="1689,1782,1991,1887" href="EA51.htm" target="_self">
+<area shape="rect" coords="1686,1500,1988,1605" href="EA45.htm" target="_self">
+<area shape="rect" coords="2367,1181,2669,1286" href="EA64.htm" target="_self">
+<area shape="rect" coords="2367,1340,2669,1445" href="EA20.htm" target="_self">
+<area shape="rect" coords="2027,1340,2328,1445" href="EA23.htm" target="_self">
+<area shape="rect" coords="1686,1340,1988,1445" href="EA58.htm" target="_self">
+<area shape="rect" coords="2024,1179,2325,1284" href="EA54.htm" target="_self">
+<area shape="rect" coords="1686,1178,1988,1283" href="EA14.htm" target="_self">
+<area shape="rect" coords="2366,573,2667,759" href="EA41.htm" target="_self">
+<area shape="rect" coords="2024,573,2325,759" href="EA68.htm" target="_self">
+<area shape="rect" coords="2366,399,2667,546" href="EA12.htm" target="_self">
+<area shape="rect" coords="1685,573,2003,701" href="EA70.htm" target="_self">
+<area shape="rect" coords="2025,396,2327,524" href="EA36.htm" target="_self">
+<area shape="rect" coords="1685,396,2004,524" href="EA63.htm" target="_self">
+<area shape="rect" coords="1149,1983,1451,2130" href="EA31.htm" target="_self">
+<area shape="rect" coords="792,1992,1094,2120" href="EA61.htm" target="_self">
+<area shape="rect" coords="437,1988,738,2174" href="EA71.htm" target="_self">
+<area shape="rect" coords="437,2253,669,2420" href="EA18.htm" target="_self">
+<area shape="rect" coords="77,1982,378,2109" href="EA43.htm" target="_self">
+<area shape="rect" coords="437,1778,762,1905" href="EA27.htm" target="_self">
+<area shape="rect" coords="77,1778,426,1905" href="EA26.htm" target="_self">
+<area shape="rect" coords="795,1560,1115,1665" href="EA22.htm" target="_self">
+<area shape="rect" coords="437,1559,773,1664" href="EA52.htm" target="_self">
+<area shape="rect" coords="77,1557,396,1662" href="EA29.htm" target="_self">
+<area shape="rect" coords="747,1113,980,1220" href="EA75.htm" target="_self">
+<area shape="rect" coords="747,917,980,1064" href="EA74.htm" target="_self">
+<area shape="rect" coords="389,936,524,1041" href="EA50.htm" target="_self">
+<area shape="rect" coords="747,761,980,867" href="EA76.htm" target="_self">
+<area shape="rect" coords="747,572,980,699" href="EA78.htm" target="_self">
+<area shape="rect" coords="747,384,980,512" href="EA77.htm" target="_self">
+<area shape="rect" coords="713,8,1013,117" href="EA4.htm" target="_self">
+<area shape="rect" coords="747,209,980,336" href="EA72.htm" target="_self">
+<area shape="rect" coords="15,848,300,1133" href="EA24.htm" target="_self">
+<area shape="rect" coords="713,144,1316,1238" href="EA56.htm" target="_self">
+<area shape="rect" coords="1652,345,2702,1089" href="EA44.htm" target="_self">
+<area shape="rect" coords="1653,1124,2700,1637" href="EA65.htm" target="_self">
+<area shape="rect" coords="1655,1688,2700,1947" href="EA39.htm" target="_self">
+<area shape="rect" coords="1655,1989,2700,2208" href="EA67.htm" target="_self">
+<area shape="rect" coords="66,1511,1277,1677" href="EA11.htm" target="_self">
+<area shape="rect" coords="66,1725,1277,1913" href="EA10.htm" target="_self">
+<area shape="rect" coords="68,1925,1487,2190" href="EA21.htm" target="_self">
+<area shape="rect" coords="47,1293,1562,2208" href="EA16.htm" target="_self">
+<area shape="rect" coords="17,51,666,690" href="EA73.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">DatamodelOpenWerk : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">11-11-2026 14:34:51</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17-11-2026 16:33:48</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Gebruiker</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{3FB53CC3-9B7B-49ed-AC07-25F85A737260}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
