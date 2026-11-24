@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Vervoersmiddel</title>
+<title>Productiviteit</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Vervoersmiddel </h1>
+			<h1> Productiviteit </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA3.htm">DatamodelOpenSociaal</a> / <a href="EA62.htm">Vervoersmiddel</a></p>
+			<p><a href="EA3.htm">DatamodelOpenSociaal</a> / <a href="EA62.htm">Productiviteit</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -115,15 +115,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Vervoersmiddel  : Public  &lt;&lt;Enumeratie&gt;&gt; Enumeration</span>
+	<span class="ObjectTitle">Productiviteit  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">17-11-2026 15:02:58</td>
+			<td width="85%" class="ObjectDetailsValue">17-11-2026 13:36:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17-11-2026 15:04:01</td>
+			<td class="ObjectDetailsValue">17-11-2026 15:40:32</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,20 +168,20 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{95B356CE-D930-4690-841F-9D8F6DC2D3FF}</td>
+			<td class="ObjectDetailsValue">{087F5BD6-231B-478e-8B17-B8D137CDC021}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">DatamodelOpenWerk</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">De vervoersmiddelen waarvan de inwoner gebruik kan maken.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">De mate waarin de inwoner in een specifieke functie arbeidsprestaties levert ten opzichte van een vergelijkbare werknemer zonder beperkingen. De productiviteit wordt uitgedrukt in een loonwaardepercentage.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent != null ? parent.toggleItem('TaggedVal') : toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -192,76 +192,169 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{E1230CC8-9AE2-4332-AB75-4039A2635970}"></a>Lopen
+					<a name="{CA48092B-B993-421c-A9B4-F6360A3DE6C9}"></a>beoordelaar
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					String
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De persoon of organisatie die de beoordeling heeft uitgevoerd.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{3FEF8EB2-1CA8-48c5-9B37-B2010EB33C79}"></a>Fiets
+					<a name="{FDE062AD-EFF5-4e60-A2A8-9D531416DD03}"></a>bron
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					String
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De bron waarop de loonwaarde-indicatie of -meting is gebaseerd.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{A45AD296-A381-4244-AB3D-FCAA06D3D994}"></a>Auto
+					<a name="{3AE0EC1F-EAD6-4c9e-951D-D6DDBEA0E7B3}"></a>datumBeoordeling
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					Date
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De datum waarop de loonwaarde is beoordeeld of bepaald.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{FF207BC4-B02E-45be-9B6A-FCB2BCEA49EC}"></a>OV
+					<a name="{342C9A2A-1CE2-4ef3-84BD-FA3CB430D21C}"></a>loonwaardePercentage
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					
+					Percentage
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De productiviteit van de inwoner uitgedrukt als percentage van loonwaarde.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{864E801B-DC47-4393-AC74-9FAEB00D1EB3}"></a>toelichting
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Aanvullende informatie over de productiviteit en de onderbouwing van de inschatting.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="CustomPropertiesTable">
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Populatie</td>
+				<td width="50%" class="TableRow" valign="top">Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Toelichting</td>
+				<td width="50%" class="TableRow" valign="top">Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					Details:
+						&nbsp;
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>
@@ -274,26 +367,7 @@
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA61.htm">«Objecttype» Vervoer</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Abstraction</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+		</div>	</div>
  </div>
  </td>
 				</tr>

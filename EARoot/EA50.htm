@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Persoon</title>
+<title>MeedoenNu</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Persoon </h1>
+			<h1> MeedoenNu </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA3.htm">DatamodelOpenSociaal</a> / <a href="EA50.htm">Persoon</a></p>
+			<p><a href="EA3.htm">DatamodelOpenSociaal</a> / <a href="EA50.htm">MeedoenNu</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -115,15 +115,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Persoon  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
+	<span class="ObjectTitle">MeedoenNu  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11-11-2026 15:09:49</td>
+			<td width="85%" class="ObjectDetailsValue">17-11-2026 13:33:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17-11-2026 15:15:24</td>
+			<td class="ObjectDetailsValue">17-11-2026 16:15:35</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,14 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{F75B414F-E669-4054-9ACE-EAC838E557DF}</td>
+			<td class="ObjectDetailsValue">{AAB28CB2-6B88-4d2f-A247-10B18C86C64A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA1.htm">DatamodelOpenWerk</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Een natuurlijk persoon op wie de gegevens en beoordelingen in het datamodel betrekking hebben.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">De mate waarin een inwoner op dit moment deelneemt aan maatschappelijke, sociale, educatieve of arbeidsgerichte activiteiten.&lt;br/&gt;&lt;br/&gt;Vrijwilligerswerk.&lt;br/&gt;Dagbesteding.&lt;br/&gt;Cursus.&lt;br/&gt;ZRM-domeinen Tijdsbesteding en Maatschappelijke participatie.&lt;br/&gt;Meetmethode: handmatig en ZRM.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -193,19 +193,164 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{1EAE27B0-6265-44ab-ABEB-437ACE793A22}"></a>BSN
+					<a name="{3D88F15F-2356-4c45-8276-FF772540AE24}"></a>deelnameDagbesteding
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					Integer
+					Boolean
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Geeft aan of de inwoner deelneemt aan dagbesteding.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{57905D3F-CD3B-407e-86FB-A88BE3ABC129}"></a>deelnameOpleidingOfCursus
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					Boolean
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Geeft aan of de inwoner deelneemt aan een opleiding, cursus of leeractiviteit.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{483F560C-DA31-47ef-9F9C-B75915DA8949}"></a>deelnameOverigeActiviteiten
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					Boolean
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Geeft aan of de inwoner deelneemt aan andere maatschappelijke, sociale of arbeidsgerichte activiteiten.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{A5CA79AB-4753-4d12-8483-AA3438CCD844}"></a>deelnameVrijwilligerswerk
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					Boolean
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Geeft aan of de inwoner vrijwilligerswerk verricht.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{064FB4A0-9475-4ff2-B18A-7243F9CF6160}"></a>omvangDeelname
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Een beschrijving van de frequentie en omvang van de deelname aan activiteiten.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{E8372E93-906E-4960-9339-772DA2203381}"></a>toelichting
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Aanvullende informatie over de activiteiten en de betekenis daarvan voor de inwoner.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -220,7 +365,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA49.htm">«Objecttype» Partij</a><br />
+						<a href="EA57.htm">«Objecttype» ParticipatieActiviteit</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -234,54 +379,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink129" /></button>Details:
-							<div id="detailsDIVLink129" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA17.htm">«Objecttype» Belastbaarheid</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink130" /></button>Details:
-							<div id="detailsDIVLink130" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA74.htm">«Objecttype» ZRMBeoordeling</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink131" /></button>Details:
-							<div id="detailsDIVLink131" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink127" /></button>Details:
+							<div id="detailsDIVLink127" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
